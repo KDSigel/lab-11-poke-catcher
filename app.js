@@ -2,15 +2,13 @@ import { getRandomPokemon, setPokedex, getPokedex, renderNewPokemon, encounterPo
 
 const catchBtn = document.getElementById('catch-btn');
 
-// const pokesSection = document.getElementById('pokes-section');
-
 
 renderNewPokemon();
 
 catchBtn.addEventListener('click', () => {
-    let pickedPoke = document.querySelector('input:checked');
-    catchPokemon(pickedPoke);
-    renderNewPokemon();
+    const pickedPoke = document.querySelector('input:checked');
+    catchPokemon(pickedPoke.value);
+    // renderNewPokemon();
 });
   
 

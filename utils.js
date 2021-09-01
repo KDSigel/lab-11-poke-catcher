@@ -1,6 +1,6 @@
 import pokemon from './data.js';
 
-const POKEDEX = 'pokedex';
+const POKEDEX = 'POKEDEX';
 
 function getRandomIndex() {
     return Math.floor(Math.random() * pokemon.length);
@@ -42,9 +42,13 @@ export function renderNewPokemon() {
     secondPokesImage.src = getNewThree[1].url_image;
     thirdPokesImage.src = getNewThree[2].url_image;
     
-    firstPokesEl.value = getNewThree[0]._id;
-    secondPokesEl.value = getNewThree[1]._id;
-    thirdPokesEl.value = getNewThree[2]._id;
+    firstPokesEl.value = getNewThree[0].id;
+    secondPokesEl.value = getNewThree[1].id;
+    thirdPokesEl.value = getNewThree[2].id;
+
+    encounterPokemon(getNewThree[0].id);
+    encounterPokemon(getNewThree[1].id);
+    encounterPokemon(getNewThree[2].id);
 }
 
 export function setPokedex(pokedex) {
@@ -74,7 +78,7 @@ export function encounterPokemon(id) {
     else {
         const newPokeEncounter = {
             id: id, encountered: 1, caught: 0 };
-        hasEncountered.push(newPokeEncounter);
+        encounterPoke.push(newPokeEncounter);
     }
     setPokedex(encounterPoke);
 }
