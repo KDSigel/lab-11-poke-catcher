@@ -1,4 +1,4 @@
-body {
+* { box-sizing: border-box;
 }
 
 main {
@@ -8,5 +8,19 @@ main {
     align-items: center;
 }
 
-footer {
+img {
+    border-radius: 10px;
+    width: 300px;
+}
+input[type="radio"] {
+    display: none;
+}
+input + img {
+    border: solid 5px transparent;
+}
+input:checked + img {
+    background-color: rgb(255, 174, 0);
+}
+img:hover {
+    border: solid 5px rgb(255, 174, 0);
 }

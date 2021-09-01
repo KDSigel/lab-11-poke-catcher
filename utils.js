@@ -63,17 +63,28 @@ export function getPokedex() {
     return actualPokeCount;
 }
 
-// encounterPokemon(id)
-// - getPokedex
-// - If the pokemon has been previously seen, just increment the times seen
-// - If this is the first time, make a new object with `{ id: 5, encoutered: 1, caught: 0 }`
-// - setPokedex
+export function encounterPokemon(id) {
+    const encounterPoke = getPokedex();
+    
+    const hasEncountered = findById(encounterPoke, id);
 
-// catchPokemon(id)
-// - getPokedex
-// - no need to check if it's been encountered. If you got this far, it _has_ been encountered.
-// - Increment the `caught` of this pokemon in local storage
-// - setPokedex
+    if (hasEncountered) {
+        hasEncountered.encountered++;
+    }
+    else {
+        const newPokeEncounter = {
+            id: id, encountered: 1, caught: 0 };
+        hasEncountered.push(newPokeEncounter);
+    }
+    setPokedex(encounterPoke);
+}
+
+export function catchPokemon(id) {
+    const caughtValue = getPokedex();
+    const caughtPoke = findById(caughtValue, id);
+    caughtPoke.caught++;
+    getPokedex(caughtValue);
+}
 
 export function findById(pokeArray, id) {
     for (let poke of pokeArray) {
