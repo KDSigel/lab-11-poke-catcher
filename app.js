@@ -18,7 +18,3 @@ catchBtn.addEventListener('click', () => {
     }
 
 });
-  
-
-  // - now, if `pokeCaught > 10`, redirect to the results page
-  // - call `renderNewPokemon()`
