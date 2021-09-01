@@ -8,7 +8,7 @@
 <!--     <link rel="stylesheet" href="./styles/reset.css"> -->
     <link rel="stylesheet" href="./styles/style.css">
 <!--     <link rel="stylesheet" href="./styles/home.css"> -->
-    <title>Document</title>
+    <title>Poke Catcher</title>
 </head>
 
 <body>
@@ -17,12 +17,25 @@
     </header>
     
     <main>
+        <section id="pokes-section">
+            <label>
+                <input type="radio" name="random-poke" value="poke1" id="poke-1" /><img src="" id="poke-image-1" />
+            </label>
+            <label>
+                <input type="radio" name="random-poke" value="poke2" id="poke-2" /><img src="" id="poke-image-2" />
+            </label>
+            <label>
+                <input type="radio" name="random-poke" value="poke3" id="poke-3" /><img src="" id="poke-image-3" />
+            </label>
+        </section>
+        <button id="catch-btn">catch!</button>
     </main>
     
     <footer>
     </footer>
 
     <script type="module" src="./app.js"></script>
+    <script type="module" src="./utils.js"></script>
 </body>
 
 </html>

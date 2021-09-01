@@ -1,8 +1,17 @@
-// import functions and grab DOM elements
+import { getRandomPokemon, setPokedex, getPokedex, renderNewPokemon, encounterPokemon, catchPokemon } from './utils.js';
 
-// initialize global state
+const catchBtn = document.getElementById('catch-btn');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+
+renderNewPokemon();
+
+catchBtn.addEventListener('click', () => {
+    const pickedPoke = document.querySelector('input:checked');
+    // if !pickedPoke, alert('nooooo');
+    catchPokemon(pickedPoke.value);
+    renderNewPokemon();
+});
+  
+
+  // - now, if `pokeCaught > 10`, redirect to the results page
+  // - call `renderNewPokemon()`
