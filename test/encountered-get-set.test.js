@@ -1,5 +1,5 @@
 
-import { getRandomPokemon, setPokedex, getPokedex, encounterPokemon } from '../utils.js';
+import { setPokedex, getPokedex, encounterPokemon } from '../utils.js';
 
 const test = QUnit.test;
 

@@ -80,8 +80,13 @@ export function encounterPokemon(id) {
         hasEncountered.encountered++;
     }
     else {
+        const PokeObject = findById(pokemon, id);
         const newPokeEncounter = {
-            id: id, encountered: 1, caught: 0 };
+            id, 
+            encountered: 1, 
+            caught: 0,
+            name: PokeObject.pokemon
+        };
         encounterPoke.push(newPokeEncounter);
     }
     setPokedex(encounterPoke);
