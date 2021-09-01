@@ -17,14 +17,15 @@ const myChart = new Chart(ctx, { //eslint-disable-line
             label: '# of encounters',
             data: numberOfEncounters,
             backgroundColor: [
-                'rgba(80, 111, 88, 0.1)',
-                'rgba(0, 222, 8, 0.1)',
-                'rgba(22, 0, 55, 0.1)',
-                'rgba(44, 188, 86, 0.1)',
-                'rgba(88, 144, 0, 0.1)',
-                'rgba(122, 122, 188, 0.1)',
-                'rgba(144, 88, 205, 0.1)',
-                'rgba(0, 44, 222, 0.1)'
+                'rgba(80, 81, 79, 0.1)',
+                'rgba(161, 88, 86, 0.1)',
+                'rgba(242, 95, 92, 0.1)',
+                'rgba(249, 160, 97, 0.1)',
+                'rgba(255, 224, 102, 0.1)',
+                'rgba(146, 174, 131, 0.1)',
+                'rgba(36, 123, 160, 0.1)',
+                'rgba(74, 158, 170, 0.1)',
+                'rgba(112, 193, 179, 0.1)'
             ],
             borderWidth: 1
         },
@@ -32,14 +33,15 @@ const myChart = new Chart(ctx, { //eslint-disable-line
             label: '# of captures',
             data: numberOfCaptures,
             backgroundColor: [
-                'rgba(80, 111, 88, 0.7)',
-                'rgba(0, 222, 8, 0.7)',
-                'rgba(22, 0, 55, 0.7)',
-                'rgba(44, 188, 86, 0.7)',
-                'rgba(88, 144, 0, 0.7)',
-                'rgba(122, 122, 188, 0.7)',
-                'rgba(144, 88, 205, 0.7)',
-                'rgba(0, 44, 222, 0.7)'
+                'rgba(80, 81, 79, 0.7)',
+                'rgba(161, 88, 86, 0.7)',
+                'rgba(242, 95, 92, 0.7)',
+                'rgba(249, 160, 97, 0.7)',
+                'rgba(255, 224, 102, 0.7)',
+                'rgba(146, 174, 131, 0.7)',
+                'rgba(36, 123, 160, 0.7)',
+                'rgba(74, 158, 170, 0.7)',
+                'rgba(112, 193, 179, 0.7)'
             ],
             borderWidth: 1
         }], 

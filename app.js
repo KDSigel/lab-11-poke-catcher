@@ -1,15 +1,22 @@
 import { getRandomPokemon, setPokedex, getPokedex, renderNewPokemon, encounterPokemon, catchPokemon } from './utils.js';
 
+
 const catchBtn = document.getElementById('catch-btn');
 
+let turns = 0;
 
 renderNewPokemon();
 
 catchBtn.addEventListener('click', () => {
+    turns++;
     const pickedPoke = document.querySelector('input:checked');
-    // if !pickedPoke, alert('nooooo');
     catchPokemon(pickedPoke.value);
-    renderNewPokemon();
+    if (turns > 9) {
+        window.location = './results/index.html';
+    } else {
+        renderNewPokemon();
+    }
+
 });
   
 
