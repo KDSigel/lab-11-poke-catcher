@@ -49,6 +49,10 @@ export function renderNewPokemon() {
     encounterPokemon(getNewThree[0].id);
     encounterPokemon(getNewThree[1].id);
     encounterPokemon(getNewThree[2].id);
+
+    firstPokesEl.checked = false;
+    secondPokesEl.checked = false;
+    thirdPokesEl.checked = false;
 }
 
 export function setPokedex(pokedex) {
