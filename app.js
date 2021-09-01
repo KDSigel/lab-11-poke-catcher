@@ -1,10 +1,8 @@
-import { getRandomPokemon, setPokedex, getPokedex, renderNewPokemon, encounterPokemon, catchPokemon } from './utils.js';
-
+import { renderNewPokemon, catchPokemon } from './utils.js';
 
 const catchBtn = document.getElementById('catch-btn');
 
 let turns = 0;
-
 renderNewPokemon();
 
 catchBtn.addEventListener('click', () => {
@@ -16,5 +14,4 @@ catchBtn.addEventListener('click', () => {
     } else {
         renderNewPokemon();
     }
-
 });

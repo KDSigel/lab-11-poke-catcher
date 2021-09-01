@@ -1,5 +1,4 @@
-import pokemon from '../data.js';
-import { getRandomPokemon, setPokedex, getPokedex, renderNewPokemon, encounterPokemon, catchPokemon } from '../utils.js';
+import { getPokedex, } from '../utils.js';
 
 const pokedex = getPokedex();
 
