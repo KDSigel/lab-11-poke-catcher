@@ -8,7 +8,7 @@ renderNewPokemon();
 catchBtn.addEventListener('click', () => {
     const pickedPoke = document.querySelector('input:checked');
     catchPokemon(pickedPoke.value);
-    // renderNewPokemon();
+    renderNewPokemon();
 });
   
 

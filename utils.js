@@ -87,7 +87,7 @@ export function catchPokemon(id) {
     const caughtValue = getPokedex();
     const caughtPoke = findById(caughtValue, id);
     caughtPoke.caught++;
-    getPokedex(caughtValue);
+    setPokedex(caughtValue);
 }
 
 export function findById(pokeArray, id) {
